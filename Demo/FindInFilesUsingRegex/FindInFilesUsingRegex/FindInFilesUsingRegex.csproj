@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Authors>Marko Lohert</Authors>
+    <Copyright>Copyright 2022 Marko Lohert</Copyright>
+    <PackageIcon></PackageIcon>
+    <PackageLicenseFile>..\LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+</Project>
