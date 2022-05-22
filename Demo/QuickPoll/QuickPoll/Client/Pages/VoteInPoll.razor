@@ -1,0 +1,33 @@
+﻿@using static System.Net.WebRequestMethods
+
+@inject HttpClient Http
+
+@if (Visible)
+{
+    <h3>Poll</h3>
+
+    @if (poll is not null)
+    {
+        <h3>@poll.PollName</h3>
+        <br />
+        <p style="text-justify:inter-word">
+            @poll.Question
+        </p>
+        <br />
+        @if (poll.PossibleAnswers is not null && poll.PossibleAnswers.Count > 0)
+        {
+            <EditForm Model="@poll" OnValidSubmit="@HandleValidSubmit">
+                @if (@poll.PossibleAnswers is not null)
+                {
+                    <InputRadioGroup @bind-Value="@SelectedAnswer">
+                        @foreach (Answer @possibleAsnwer in @poll.PossibleAnswers)
+                        {
+                        <InputRadio Value="@possibleAsnwer?.AnswerId" /> @possibleAsnwer?.AnswerText <br />
+                        }
+                    </InputRadioGroup>
+                }
+                <button type="submit">Vote</button>
+            </EditForm>
+        }
+    }
+}

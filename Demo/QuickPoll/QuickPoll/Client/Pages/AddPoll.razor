@@ -1,0 +1,48 @@
+﻿@page "/AddPoll"
+
+@inject HttpClient Http
+
+<div style="text-align:center">
+    <h1>QuickPoll</h1>
+
+    A quick way to create a simple poll.
+
+    <br /><br />
+</div>
+
+
+<h3>Let's creat a new poll</h3>
+
+<EditForm Model="@NewPoll" OnValidSubmit="@HandleValidSubmit">
+    Poll Name
+    <br />
+    <InputText id="name" @bind-Value="NewPoll.PollName" />
+    <br />
+
+    Question
+    <br />
+    <InputText id="question" @bind-Value="NewPoll.Question" />
+    <br />
+
+    Anwsers
+    <br />
+    @foreach (Answer @answer in @NewPoll.PossibleAnswers)
+    {
+        <InputText id="question" @bind-Value="@answer.AnswerText" />
+        <button type="button" onclick="@(()=>{@NewPoll.PossibleAnswers.Remove(@answer);StateHasChanged();})">x</button>
+        <br />
+    }
+
+    <button type="button" @onclick="BtnAddAnswer">Add Answer</button>
+
+    <br /><br />
+    <button type="submit">Create Poll</button>
+</EditForm>
+
+<br />
+<br />
+<button type="button" @onclick="AnalyzeNewPoll">Analyze New Poll</button>
+
+<br />
+<br />
+@((MarkupString)NewPollAnalyzeResult)

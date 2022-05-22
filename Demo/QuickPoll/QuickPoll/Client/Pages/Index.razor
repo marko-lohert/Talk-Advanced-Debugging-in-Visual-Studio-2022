@@ -1,0 +1,21 @@
+﻿@page "/"
+
+<PageTitle>QuickPoll</PageTitle>
+
+<div style="text-align:center">
+    <h1>QuickPoll</h1>
+
+    A quick way to create a simple poll.
+
+    <br /><br />
+
+    <PollSelection OnPollSelected="PollSelectedHandler" />
+
+    <br /><br />
+
+    <VoteInPoll @ref="VoteInPollComponent" OnVoted="VotedHandler" />
+
+    <br /><br />
+
+    <PollResult @ref="PollResultComponent" />
+</div>

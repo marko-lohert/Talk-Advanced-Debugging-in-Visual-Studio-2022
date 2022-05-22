@@ -1,0 +1,30 @@
+﻿@inject HttpClient Http
+
+@if (Visible)
+{
+
+    <h3>PollResult</h3>
+
+    @if (Result is not null)
+    {
+        <table class="table" align="center">
+            <thead>
+                <tr>
+                    <th>Answer</th>
+                    <th>Votes</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var @singleResult in Result.AllResults)
+                {
+                    <tr>
+                        <td>@singleResult.Answer.AnswerText</td>
+                        <td>@singleResult.VotesCount</td>
+                        <td>@singleResult.VotesPercentage.ToString("P2")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}

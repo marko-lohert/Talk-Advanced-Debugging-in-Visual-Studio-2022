@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickPoll.Server", "QuickPoll\Server\QuickPoll.Server.csproj", "{FD3F8275-AA65-40F7-BE5B-6AC7927605E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickPoll.Client", "QuickPoll\Client\QuickPoll.Client.csproj", "{31443258-A17E-4D37-B340-AB65ADA624F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickPoll.Shared", "QuickPoll\Shared\QuickPoll.Shared.csproj", "{10488A49-B944-438B-9DCE-8460E0040DE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{547AD851-C1FB-4607-B362-1D96DAECAE65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickPoll.Client.UnitTests", "QuickPoll.Client.UnitTests\QuickPoll.Client.UnitTests.csproj", "{DB2DA27F-BDBD-4C49-84AF-683A2EF9CFE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickPoll.Server.UnitTests", "QuickPoll.Server.UnitTests\QuickPoll.Server.UnitTests.csproj", "{A3EFEC59-036B-4F3B-A675-63912F206B42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD3F8275-AA65-40F7-BE5B-6AC7927605E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD3F8275-AA65-40F7-BE5B-6AC7927605E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD3F8275-AA65-40F7-BE5B-6AC7927605E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD3F8275-AA65-40F7-BE5B-6AC7927605E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31443258-A17E-4D37-B340-AB65ADA624F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31443258-A17E-4D37-B340-AB65ADA624F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31443258-A17E-4D37-B340-AB65ADA624F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31443258-A17E-4D37-B340-AB65ADA624F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10488A49-B944-438B-9DCE-8460E0040DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10488A49-B944-438B-9DCE-8460E0040DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10488A49-B944-438B-9DCE-8460E0040DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10488A49-B944-438B-9DCE-8460E0040DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB2DA27F-BDBD-4C49-84AF-683A2EF9CFE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB2DA27F-BDBD-4C49-84AF-683A2EF9CFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB2DA27F-BDBD-4C49-84AF-683A2EF9CFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB2DA27F-BDBD-4C49-84AF-683A2EF9CFE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3EFEC59-036B-4F3B-A675-63912F206B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3EFEC59-036B-4F3B-A675-63912F206B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3EFEC59-036B-4F3B-A675-63912F206B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3EFEC59-036B-4F3B-A675-63912F206B42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB2DA27F-BDBD-4C49-84AF-683A2EF9CFE5} = {547AD851-C1FB-4607-B362-1D96DAECAE65}
+		{A3EFEC59-036B-4F3B-A675-63912F206B42} = {547AD851-C1FB-4607-B362-1D96DAECAE65}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB7A7730-30D3-4190-A2A8-C4653FBDDA02}
+	EndGlobalSection
+EndGlobal

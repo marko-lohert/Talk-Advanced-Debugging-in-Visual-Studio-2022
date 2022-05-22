@@ -1,0 +1,7 @@
+﻿<EditForm Model="@SelectedPollModel" OnValidSubmit="@HandleValidSubmit">
+    <InputText id="name" @bind-Value="SelectedPollModel.PollName">Poll Name</InputText>
+    <button type="submit">Open Poll</button>
+
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+</EditForm>
